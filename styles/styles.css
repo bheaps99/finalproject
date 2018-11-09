@@ -1,0 +1,180 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: lightgrey;
+    min-width:320px;     
+    width: auto !important;
+}
+
+.wrapper{
+    max-width: 980px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title{
+    height: 65px;
+    width:350px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.BCIT{
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: darkblue;
+    margin: auto;
+    padding-top:10px;
+    text-align: center;
+    font-size: 2em;
+}
+.link{
+    display: block;
+    width: 270px;
+    margin:auto;
+    margin-left: 10px;
+    color: black;
+    font-size:1.1em;
+    font-weight: bold;
+}
+.link a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+.hamburger{
+    display: none;
+}
+
+nav{
+    height: 65px;
+    width: 425px;
+    padding-right: 15px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li{
+    flex:1;
+    display: block;
+}
+
+nav a {
+    text-transform: uppercase;
+    display: block;
+    line-height: 65px;
+    padding-left: 20px;
+    color: black;
+    text-decoration: none;
+    font-size:1.1em;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 785px){
+
+    .hamburger {
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        color: black;
+        line-height: 1;
+        font-size: 1.9em;
+    }
+
+    .hamburger:focus,
+    .hamburger-icon:focus {
+        outline: none;
+    }
+    
+    .hamburger:focus .hamburger-icon {
+        outline: 5px solid #69c1db;
+    }
+
+    .hamburger-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    } 
+    /*all hamburger code from day 7 sitecomplete 12-grid-portfolio-asspect-ratio*/
+    
+
+    header {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav {
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        /*transition: height 0.3s ease;*/
+    }
+
+    nav ul {
+        display: block;
+        width:985px;
+        background-color: white;
+    }
+
+    nav a {
+        line-height: 40px;
+        border-bottom: 1px solid #333;
+        border-top: 1px solid #afafaf;
+        padding-left:10px;
+    }
+
+    .show nav {
+        height: 170px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+        .BCIT{
+            width:80px;
+    
+        }
+        .link{
+            width:192px;
+        }
+    
+        .title{
+            width: 270px;
+        }
+
+        nav a {
+            padding-left:0;
+        }
+        
+    }
+
+}
