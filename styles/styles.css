@@ -32,9 +32,9 @@ header{
     display: block;
     width:170px;
     height: 100px;
-    background-color: rgba(47, 47, 90, 0.8);
+    background-color: rgb(0, 63, 107);
     margin: auto;
-    padding-top:47px;
+    padding-top:43px;
     text-align: center;
     font-size: 2em;
     margin-left: 40px;
