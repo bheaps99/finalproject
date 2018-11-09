@@ -9,7 +9,9 @@ body{
 .wrapper{
     max-width: 980px;
     margin: 0 auto;
-    background-color: white;
+    background: gray url('../images/bcit_980.jpg');
+    background-repeat: no-repeat;
+    height: 1000px;
 }
 
 header{
@@ -17,27 +19,35 @@ header{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    background-color: rgba(39, 39, 80, 0.3);
 }
 
 .title{
     height: 65px;
-    width:350px;
-    display: flex;
-    justify-content: flex-start;
+    width:170px;
+
 }
 
 .BCIT{
     display: block;
-    width: 100px;
-    height: 50px;
-    background-color: darkblue;
+    width:170px;
+    height: 100px;
+    background-color: rgba(47, 47, 90, 0.8);
     margin: auto;
-    padding-top:10px;
+    padding-top:47px;
     text-align: center;
     font-size: 2em;
+    margin-left: 40px;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    font-family: Arial;
+    color: white;
+    font-size: 3.5em;
 }
 .link{
-    display: block;
+    /*display: block;*/
+    display: none;
     width: 270px;
     margin:auto;
     margin-left: 10px;
@@ -70,17 +80,25 @@ nav ul {
 nav li{
     flex:1;
     display: block;
+    margin-left:13px;
+    margin-right:13px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+nav li:hover{
+    border-bottom: 2px solid rgb(73, 26, 26);
 }
 
 nav a {
     text-transform: uppercase;
     display: block;
     line-height: 65px;
-    padding-left: 20px;
-    color: black;
+    font-family: Arial;
+    color: rgb(223, 215, 215);
     text-decoration: none;
     font-size:1.1em;
-    font-weight: bold;
+    font-weight: 200;
 }
 
 @media only screen and (max-width: 785px){
@@ -174,7 +192,5 @@ nav a {
         nav a {
             padding-left:0;
         }
-        
-    }
 
 }
