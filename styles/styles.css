@@ -118,7 +118,7 @@ nav a {
     }
 
     .hamburger-icon {
-        color: black;
+        color: white;
         line-height: 1;
         font-size: 1.9em;
     }
@@ -154,32 +154,46 @@ nav a {
         height: 0;
         overflow: hidden;
         width: 100%;
-        /*transition: height 0.3s ease;*/
+        
     }
 
     nav ul {
         display: block;
         width:985px;
-        background-color: white;
+        background-color: rgba(39, 39, 80, 0.3);
+    }
+
+    nav a:hover {
+        color:rgb(73, 26, 26);
     }
 
     nav a {
         line-height: 40px;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #afafaf;
         border-top: 1px solid #afafaf;
         padding-left:10px;
     }
 
+    nav li:hover {
+        border-bottom: none;
+    }
+
     .show nav {
         height: 170px;
+    }
+
+    .show .BCIT {
+        padding-top:0;
+        padding-bottom:0;
+        height: 60px;
     }
 }
 
 @media only screen and (max-width: 400px){
 
         .BCIT{
-            width:80px;
-    
+            width:170px;
+            margin-left: 20px;
         }
         .link{
             width:192px;
