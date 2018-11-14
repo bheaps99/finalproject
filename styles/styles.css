@@ -1,3 +1,10 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 body{
     margin:0;
     padding:0;
@@ -11,7 +18,7 @@ body{
     margin: 0 auto;
     background: gray url('../images/bcit_980.jpg');
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 1500px;
 }
 
 header{
@@ -31,7 +38,7 @@ header{
 .BCIT{
     display: block;
     width:170px;
-    height: 100px;
+    height: 143px;
     background-color: rgb(0, 63, 107);
     margin: auto;
     padding-top:43px;
@@ -101,6 +108,126 @@ nav a {
     font-weight: 200;
 }
 
+main {
+    position: relative;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 430px 1fr 345px .6fr;
+    grid-template-rows: 330px 200px 200px;;
+    padding-top: 500px;
+    grid-gap: 10px;
+}
+
+.overview {
+    grid-row: 1 / span 2;
+    grid-column:2;
+    align-self: end ;
+    height: 330px;
+    width: 430px;
+    background-color: rgb(0, 63, 107);
+    padding: 30px;
+}
+
+.overview h1{
+    text-transform: uppercase;
+    font-size: 3.5em;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    padding-bottom:30px;
+    border-bottom: 2px solid rgb(226, 84, 18);
+    width: 300px;
+}
+
+.overview p {
+    padding-top: 20px;
+    color: white;
+    font-family: Arial;
+    line-height: 1.5
+}
+
+.about1{
+    grid-row:1;
+    grid-column: 4;
+    height: 330px;
+    width:345px;
+    background-color: rgb(73, 26, 26);
+    padding: 30px;
+}
+
+.about1 h1 {
+    text-transform: uppercase;
+    font-size: 2.7em;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+    padding-bottom:10px;
+    padding-top: 10px;
+    border-bottom: 2px solid rgb(226, 84, 18);
+    border-top:2px solid rgb(226, 84, 18);
+    width: 200px;
+}
+
+.about1 p{
+    padding-top:2px;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-family: arial;
+}
+
+.goals {
+    grid-row: 2 span 2;
+    grid-column: 4;
+    padding: 25px;
+    height: 490px;
+    width: 345px;
+    background-color: rgb(3, 80, 134);
+    padding-top:0;
+}
+
+.goals h2{
+    text-transform: uppercase;
+    font-size: 1.6em;
+    width: 300px;
+    border-bottom: 2px solid rgb(226, 84, 18);
+    color: white;
+    padding-top:0;
+}
+
+.goals ul {
+    margin:0;
+    padding:0;
+    color: white;
+    font-family: Arial;
+    font-size: 0.8em;
+}
+#firsth2{
+    width: 205px;
+}
+
+.apply {
+    position: absolute;
+    left: 50px;
+    top: 1020px;
+    height: 180px;
+    width: 180px;
+    background-color: blue;
+}
+
+.learn {
+    position: absolute;
+    left: 300px;
+    top: 1020px;
+    height: 180px;
+    width: 180px;
+    background-color: blue;
+}
+
 @media only screen and (max-width: 785px){
 
     .hamburger {
@@ -154,13 +281,19 @@ nav a {
         height: 0;
         overflow: hidden;
         width: 100%;
-        
+        background-color: rgba(39, 39, 80, 0.3);
     }
 
     nav ul {
         display: block;
         width:985px;
-        background-color: rgba(39, 39, 80, 0.3);
+        background-color: rgba(39, 39, 80, 0.3)
+    }
+
+    nav li {
+        margin-left:0;
+        padding-left:0;
+
     }
 
     nav a:hover {
@@ -186,6 +319,10 @@ nav a {
         padding-top:0;
         padding-bottom:0;
         height: 60px;
+    }
+
+    .BCIT {
+        z-index: 9999;
     }
 }
 
