@@ -56,20 +56,7 @@ header{
     color: white;
     font-size: 3.5em;
 }
-.link{
-    /*display: block;*/
-    display: none;
-    width: 270px;
-    margin:auto;
-    margin-left: 10px;
-    color: black;
-    font-size:1.1em;
-    font-weight: bold;
-}
-.link a{
-    text-decoration: none;
-    color: darkblue;
-}
+
 
 .hamburger{
     display: none;
@@ -115,10 +102,11 @@ nav a {
 
 .main-grid{
     display: grid;
-    grid-template-columns: 1fr minmax(380px,45%) 1fr minmax(220px,33%) .6fr;
-    grid-template-rows:  auto auto 30% auto;
+    grid-template-columns: 1fr minmax(380px,45%) 1fr minmax(220px,40%) .6fr;
+    grid-template-rows:  auto auto auto auto;
     padding-top: calc(100% / 2.5);
     grid-gap: 10px; 
+    padding-bottom: 25px;
 }
 
 .overview {
@@ -189,7 +177,6 @@ nav a {
 .goals h2{
     text-transform: uppercase;
     font-size: 1.6em;
-   /* width: 300px;*/
     border-bottom: 2px solid rgb(226, 84, 18);
     color: white;
     padding-top:0;
@@ -204,22 +191,22 @@ nav a {
     font-family: Arial;
     font-size: 0.8em;
 }
-#firsth2{
-    /*width: 210px;*/
-}
+
 
 .applea{
     grid-row:4;
     grid-column: 2;
+    align-items: top;
     display: flex;
     justify-content:space-between;
     color: white;
+    height: 100%;
 }
 
 .apply {
     text-transform: uppercase;
-    width: 22vw;
-    height: 22vw;
+    width:47%;
+    height: 100%;
     background-color: rgb(3, 80, 134);
     position: relative;
 }
@@ -236,8 +223,8 @@ nav a {
 
 .learn {
     text-transform: uppercase;
-    width:22vw;
-    height: 22vw;
+    width:180px;
+    height: 180px;
     background-color: rgb(3, 80, 134);
     position: relative;
 }
@@ -251,6 +238,51 @@ nav a {
     font-family: Arial;
     font-size: 2em;
 }
+
+
+footer {
+    background-color: rgb(1, 41, 69);
+    padding: 15px 50px;
+    font-size: 0.9em;
+  }
+   footer p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+   footer a {
+    text-decoration: none;
+  }
+   .logo-div {
+    height: 65px;
+    width: 180px;
+    bottom: 0;
+  }
+   /* BCIT Footer logo */
+  #logo-footer {
+    width: 100px;
+    padding-top: 15px;
+  }
+   .row {
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 1fr;
+  }
+   .row .second {
+    line-height: 10px;
+    padding: 0;
+    margin: 0;
+  }
+   .row .third {
+    padding-top: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+   .row .third i {
+    font-size: 3em;
+  }
+
+
 
 @media only screen and (max-width: 785px){
 
@@ -366,7 +398,7 @@ nav a {
     .main-grid {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: auto auto auto minmax(100px,200px);
+        grid-template-rows: auto auto auto auto;
         padding-top: calc(100% / 1.75);
     }
 
@@ -390,13 +422,13 @@ nav a {
     }
 
     .learn {
-        height: 47vw;
-        width: 47vw;
+        height: 158px;
+        width: 158px;
     }
 
     .apply {
-        height: 47vw;
-        width: 47vw;
+        height: 158px;
+        width: 158px;
     }
 
     .applea {
@@ -406,14 +438,72 @@ nav a {
 
 }
 
+@media only screen and (max-width: 630px) {
+    .title {
+      left: 15px;
+    }
+  
+    footer {
+      padding: 20px 30px;
+    }
+  
+    .row {
+      grid-template-columns: 30% 70%;
+      grid-template-rows: 1fr;
+    }
+  
+    .row .first {
+      padding-top: 30px;
+    }
+  
+    .row .third {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-column-end: span 3;
+      flex-direction: row;
+      padding: 0;
+    }
+  
+    .row .third p {
+      padding: 0;
+      line-height: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 480px){
+
+    .row {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+      }
+
+      .row .first {
+          grid-row:1;
+          grid-column:1;
+        padding-top: 30px;
+      }
+
+      .row .second {
+          grid-row: 2;
+          grid-column:1;
+      }
+
+      .row .third {
+          grid-row:3;
+          grid-column:1;
+      }
+
+  }
+
 @media only screen and (max-width: 400px){
 
         .BCIT{
-            width:200px;
+            width:170px;
             margin-left: 5px;
         }
-        .link{
-            width:192px;
+
+        header{
+            width: 100%;
         }
     
         .title{
