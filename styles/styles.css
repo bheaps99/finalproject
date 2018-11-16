@@ -4,6 +4,10 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+  img {
+    max-width: 100%;
+    height: auto;
+}
 
 body{
     margin:0;
@@ -18,7 +22,8 @@ body{
     margin: 0 auto;
     background: gray url('../images/bcit_980.jpg');
     background-repeat: no-repeat;
-    height: 1500px;
+    background-size: 100% auto;
+    height: auto;
 }
 
 header{
@@ -37,13 +42,12 @@ header{
 
 .BCIT{
     display: block;
-    width:170px;
+    width: 200px;
     height: 143px;
     background-color: rgb(0, 63, 107);
     margin: auto;
-    padding-top:43px;
+    padding-top:10px;
     text-align: center;
-    font-size: 2em;
     margin-left: 40px;
     border-left: 5px solid white;
     border-right: 5px solid white;
@@ -74,7 +78,7 @@ header{
 nav{
     height: 65px;
     width: 425px;
-    padding-right: 15px;
+    margin-right:15px;
 }
 
 nav ul {
@@ -108,24 +112,18 @@ nav a {
     font-weight: 200;
 }
 
-main {
-    position: relative;
-}
 
 .main-grid{
     display: grid;
-    grid-template-columns: 1fr 430px 1fr 345px .6fr;
-    grid-template-rows: 330px 200px 200px;;
-    padding-top: 500px;
-    grid-gap: 10px;
+    grid-template-columns: 1fr minmax(380px,45%) 1fr minmax(220px,33%) .6fr;
+    grid-template-rows:  auto auto 30% auto;
+    padding-top: calc(100% / 2.5);
+    grid-gap: 10px; 
 }
 
 .overview {
-    grid-row: 1 / span 2;
+    grid-row: 2 / span 2;
     grid-column:2;
-    align-self: end ;
-    height: 330px;
-    width: 430px;
     background-color: rgb(0, 63, 107);
     padding: 30px;
 }
@@ -146,14 +144,13 @@ main {
     padding-top: 20px;
     color: white;
     font-family: Arial;
-    line-height: 1.5
+    line-height: 1.5;
+    padding-bottom: 20px
 }
 
 .about1{
-    grid-row:1;
+    grid-row:1 /span 2;
     grid-column: 4;
-    height: 330px;
-    width:345px;
     background-color: rgb(73, 26, 26);
     padding: 30px;
 }
@@ -169,7 +166,7 @@ main {
     padding-top: 10px;
     border-bottom: 2px solid rgb(226, 84, 18);
     border-top:2px solid rgb(226, 84, 18);
-    width: 200px;
+    /*width: 200px;*/
 }
 
 .about1 p{
@@ -177,15 +174,14 @@ main {
     color: white;
     font-size: 1.5em;
     text-transform: uppercase;
-    font-family: arial;
+    font-family: Arial;
 }
 
 .goals {
-    grid-row: 2 span 2;
+    grid-row: 3 / span 2;
     grid-column: 4;
     padding: 25px;
-    height: 490px;
-    width: 345px;
+
     background-color: rgb(3, 80, 134);
     padding-top:0;
 }
@@ -193,39 +189,67 @@ main {
 .goals h2{
     text-transform: uppercase;
     font-size: 1.6em;
-    width: 300px;
+   /* width: 300px;*/
     border-bottom: 2px solid rgb(226, 84, 18);
     color: white;
     padding-top:0;
+    font-family: Arial;
 }
 
 .goals ul {
     margin:0;
     padding:0;
+    padding-left:10px;
     color: white;
     font-family: Arial;
     font-size: 0.8em;
 }
 #firsth2{
-    width: 205px;
+    /*width: 210px;*/
+}
+
+.applea{
+    grid-row:4;
+    grid-column: 2;
+    display: flex;
+    justify-content:space-between;
+    color: white;
 }
 
 .apply {
+    text-transform: uppercase;
+    width: 22vw;
+    height: 22vw;
+    background-color: rgb(3, 80, 134);
+    position: relative;
+}
+
+.apply h1 {
     position: absolute;
-    left: 50px;
-    top: 1020px;
-    height: 180px;
-    width: 180px;
-    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-family: Arial;
+    font-size: 2em;
 }
 
 .learn {
+    text-transform: uppercase;
+    width:22vw;
+    height: 22vw;
+    background-color: rgb(3, 80, 134);
+    position: relative;
+}
+
+.learn h1{
+    margin: 0;
     position: absolute;
-    left: 300px;
-    top: 1020px;
-    height: 180px;
-    width: 180px;
-    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial;
+    font-size: 2em;
 }
 
 @media only screen and (max-width: 785px){
@@ -286,13 +310,14 @@ main {
 
     nav ul {
         display: block;
-        width:985px;
         background-color: rgba(39, 39, 80, 0.3)
     }
 
     nav li {
         margin-left:0;
-        padding-left:0;
+        padding-left:10px;
+        border-bottom: 1px solid #afafaf;
+        border-top: 1px solid #afafaf;
 
     }
 
@@ -302,8 +327,7 @@ main {
 
     nav a {
         line-height: 40px;
-        border-bottom: 1px solid #afafaf;
-        border-top: 1px solid #afafaf;
+        
         padding-left:10px;
     }
 
@@ -313,12 +337,23 @@ main {
 
     .show nav {
         height: 170px;
+        margin-right:0;
     }
 
     .show .BCIT {
-        padding-top:0;
+        padding-top:6px;
         padding-bottom:0;
-        height: 60px;
+        height: 65px;
+        width: 250px;
+        font-size: 2.5em;
+    }
+
+    .show .wrapper {
+        background-position-y: 14.5rem;
+    }
+
+    .show main {
+        padding-top: calc(100% /3);
     }
 
     .BCIT {
@@ -326,11 +361,56 @@ main {
     }
 }
 
+@media only screen and (max-width: 655px){
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto minmax(100px,200px);
+        padding-top: calc(100% / 1.75);
+    }
+
+    .overview {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .overview h1{
+        font-size: 2.5em;
+        width: 100px;
+    }
+
+    .about1 {
+        grid-row: 2;
+        grid-column:1;
+    }
+
+    .goals {
+        grid-row: 3;
+        grid-column: 1
+    }
+
+    .learn {
+        height: 47vw;
+        width: 47vw;
+    }
+
+    .apply {
+        height: 47vw;
+        width: 47vw;
+    }
+
+    .applea {
+        grid-row: 4;
+        grid-column: 1;
+    }
+
+}
+
 @media only screen and (max-width: 400px){
 
         .BCIT{
-            width:170px;
-            margin-left: 20px;
+            width:200px;
+            margin-left: 5px;
         }
         .link{
             width:192px;
@@ -338,6 +418,10 @@ main {
     
         .title{
             width: 270px;
+        }
+
+        nav {
+            margin-right:0;
         }
 
         nav a {
