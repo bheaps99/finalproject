@@ -26,12 +26,24 @@ body{
     height: auto;
 }
 
+/*
+about wrapper
+*/
+.about-wrapper{
+    max-width: 980px;
+    margin: 0 auto;
+    background: gray url('../images/bcit3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: auto;
+}
+
 header{
     height: 65px;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: rgba(39, 39, 80, 0.3);
+    background-color: rgba(39, 39, 80, 0.9);
 }
 
 .title{
@@ -46,7 +58,7 @@ header{
     height: 143px;
     background-color: rgb(0, 63, 107);
     margin: auto;
-    padding-top:10px;
+    padding-top:25px;
     text-align: center;
     margin-left: 40px;
     border-left: 5px solid white;
@@ -54,7 +66,7 @@ header{
     border-bottom: 5px solid white;
     font-family: Arial;
     color: white;
-    font-size: 3.5em;
+    font-size: 4.5em;
 }
 
 
@@ -64,7 +76,7 @@ header{
 
 nav{
     height: 65px;
-    width: 425px;
+    width: 505px;
     margin-right:15px;
 }
 
@@ -102,7 +114,7 @@ nav a {
 
 .main-grid{
     display: grid;
-    grid-template-columns: 1fr minmax(380px,45%) 1fr minmax(220px,40%) .6fr;
+    grid-template-columns: 1fr minmax(250px,45%) 1fr minmax(300px,40%) .6fr;
     grid-template-rows:  auto auto auto auto;
     padding-top: calc(100% / 2.5);
     grid-gap: 10px; 
@@ -154,7 +166,11 @@ nav a {
     padding-top: 10px;
     border-bottom: 2px solid rgb(226, 84, 18);
     border-top:2px solid rgb(226, 84, 18);
-    /*width: 200px;*/
+}
+
+.about1 a{
+    text-decoration: none;
+    color: white;
 }
 
 .about1 p{
@@ -169,7 +185,7 @@ nav a {
     grid-row: 3 / span 2;
     grid-column: 4;
     padding: 25px;
-
+    padding-left: 30px;
     background-color: rgb(3, 80, 134);
     padding-top:0;
 }
@@ -186,7 +202,7 @@ nav a {
 .goals ul {
     margin:0;
     padding:0;
-    padding-left:10px;
+    padding-left:15px;
     color: white;
     font-family: Arial;
     font-size: 0.8em;
@@ -200,13 +216,14 @@ nav a {
     display: flex;
     justify-content:space-between;
     color: white;
-    height: 100%;
+    padding-top: 20px;
 }
 
 .apply {
+    display: block;
     text-transform: uppercase;
-    width:47%;
-    height: 100%;
+    width:45%;
+    height: 45%;
     background-color: rgb(3, 80, 134);
     position: relative;
 }
@@ -219,12 +236,13 @@ nav a {
     margin: 0;
     font-family: Arial;
     font-size: 2em;
+
 }
 
 .learn {
     text-transform: uppercase;
-    width:180px;
-    height: 180px;
+    width:170px;
+    height: 170px;
     background-color: rgb(3, 80, 134);
     position: relative;
 }
@@ -237,6 +255,8 @@ nav a {
     transform: translate(-50%, -50%);
     font-family: Arial;
     font-size: 2em;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -354,7 +374,7 @@ footer {
     }
 
     nav a:hover {
-        color:rgb(73, 26, 26);
+        color:orange;
     }
 
     nav a {
@@ -368,7 +388,7 @@ footer {
     }
 
     .show nav {
-        height: 170px;
+        height: 212px;
         margin-right:0;
     }
 
@@ -376,12 +396,19 @@ footer {
         padding-top:6px;
         padding-bottom:0;
         height: 65px;
-        width: 250px;
+        width: 175px;
         font-size: 2.5em;
     }
 
     .show .wrapper {
-        background-position-y: 14.5rem;
+        background-position-y: 17.2rem;
+    }
+
+    /*
+    about wrapper
+    */
+    .show .about-wrapper {
+        background-position-y: 17.2rem;
     }
 
     .show main {
@@ -391,6 +418,12 @@ footer {
     .BCIT {
         z-index: 9999;
     }
+}
+@media only screen and (max-width: 755px){
+.overview h1{
+    font-size: 2.5em;
+    width: 100%;
+}
 }
 
 @media only screen and (max-width: 655px){
@@ -406,10 +439,7 @@ footer {
         grid-row: 1;
         grid-column: 1;
     }
-    .overview h1{
-        font-size: 2.5em;
-        width: 100px;
-    }
+
 
     .about1 {
         grid-row: 2;
