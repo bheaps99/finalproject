@@ -14,6 +14,8 @@ body{
     padding:0;
     background-color: lightgrey;   
     width: auto !important;
+    font-family: Arial;
+    color: white;
 }
 
 .wrapper{
@@ -64,8 +66,6 @@ header{
     border-left: 5px solid white;
     border-right: 5px solid white;
     border-bottom: 5px solid white;
-    font-family: Arial;
-    color: white;
     font-size: 4.5em;
 }
 
@@ -104,8 +104,6 @@ nav a {
     text-transform: uppercase;
     display: block;
     line-height: 65px;
-    font-family: Arial;
-    color: rgb(223, 215, 215);
     text-decoration: none;
     font-size:1.1em;
     font-weight: 200;
@@ -135,7 +133,6 @@ nav a {
     color: white;
     padding: 0;
     margin: 0;
-    font-family: Arial;
     padding-bottom:30px;
     border-bottom: 2px solid rgb(226, 84, 18);
     width: 300px;
@@ -143,8 +140,6 @@ nav a {
 
 .overview p {
     padding-top: 20px;
-    color: white;
-    font-family: Arial;
     line-height: 1.5;
     padding-bottom: 20px
 }
@@ -159,10 +154,8 @@ nav a {
 .about1 h1 {
     text-transform: uppercase;
     font-size: 2.7em;
-    color: white;
     padding: 0;
     margin: 0;
-    font-family: Arial;
     padding-bottom:10px;
     padding-top: 10px;
     border-bottom: 2px solid rgb(226, 84, 18);
@@ -179,7 +172,6 @@ nav a {
     color: white;
     font-size: 1.5em;
     text-transform: uppercase;
-    font-family: Arial;
 }
 
 .video {
@@ -205,9 +197,7 @@ nav a {
     text-transform: uppercase;
     font-size: 1.6em;
     border-bottom: 2px solid rgb(226, 84, 18);
-    color: white;
     padding-top:0;
-    font-family: Arial;
     margin-top: 0;
 }
 
@@ -215,8 +205,6 @@ nav a {
     margin:0;
     padding:0;
     padding-left:15px;
-    color: white;
-    font-family: Arial;
     font-size: 1em;
 }
 
@@ -242,9 +230,7 @@ nav a {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    font-family: Arial;
     font-size: 2em;
-    color: white;
     text-decoration: none;
 
 }
@@ -265,9 +251,7 @@ nav a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: Arial;
     font-size: 2em;
-    color: white;
     text-decoration: none;
 }
 
@@ -296,10 +280,8 @@ about page grid
 .about-overview h1{
     text-transform: uppercase;
     font-size: 3.5em;
-    color: white;
     padding: 0;
     margin: 0;
-    font-family: Arial;
     padding-bottom:30px;
     border-bottom: 2px solid rgb(226, 84, 18);
     width: 300px;
@@ -307,8 +289,6 @@ about page grid
 
 .about-overview p {
     padding-top: 20px;
-    color: white;
-    font-family: Arial;
     line-height: 1.5;
     padding-bottom: 20px
 }
@@ -324,10 +304,8 @@ about page grid
 .about-about1 h1 {
     text-transform: uppercase;
     font-size: 2.7em;
-    color: white;
     padding: 0;
     margin: 0;
-    font-family: Arial;
     padding-bottom:10px;
     padding-top: 10px;
     border-bottom: 2px solid rgb(226, 84, 18);
@@ -341,10 +319,8 @@ about page grid
 
 .about-about1 p{
     padding-top:2px;
-    color: white;
     font-size: 1.5em;
     text-transform: uppercase;
-    font-family: Arial;
 }
 
 .about-goals {
@@ -361,17 +337,13 @@ about page grid
     text-transform: uppercase;
     font-size: 1.6em;
     border-bottom: 2px solid rgb(226, 84, 18);
-    color: white;
     padding-top:0;
-    font-family: Arial;
 }
 
 .about-goals ul {
     margin:0;
     padding:0;
     padding-left:15px;
-    color: white;
-    font-family: Arial;
     font-size: 0.8em;
 }
 .pic {
@@ -412,7 +384,6 @@ about lower div
     padding-right: 5%;
     padding-bottom: 20px;
     padding-top: 20px;
-    font-family: Arial;
     font-size: 0.9em;
     margin-bottom: 15px;
 }
@@ -431,12 +402,10 @@ footer {
     padding: 15px 50px;
     font-size: 0.9em;
   }
-   footer p {
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+
    footer a {
     text-decoration: none;
+    color: white;
   }
    .logo-div {
     height: 65px;
