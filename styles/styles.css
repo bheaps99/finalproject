@@ -114,7 +114,8 @@ nav {
     margin: 0;
     padding-bottom: 30px;
     border-bottom: 2px solid #e25412;
-    width: 300px; }
+    width: 300px;
+    font-family: "Roboto", sans-serif; }
   .overview p {
     padding-top: 20px;
     line-height: 1.5;
@@ -133,7 +134,8 @@ nav {
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: 2px solid #e25412;
-    border-top: 2px solid #e25412; }
+    border-top: 2px solid #e25412;
+    font-family: "Roboto", sans-serif; }
   .about1 a {
     text-decoration: none;
     color: #fff; }
@@ -237,7 +239,8 @@ nav {
     margin: 0;
     padding-bottom: 30px;
     border-bottom: 2px solid #e25412;
-    width: 300px; }
+    width: 300px;
+    font-family: "Roboto", sans-serif; }
   .about-overview p {
     padding-top: 20px;
     line-height: 1.5;
@@ -257,7 +260,8 @@ nav {
     padding-bottom: 10px;
     padding-top: 10px;
     border-bottom: 2px solid #e25412;
-    border-top: 2px solid #e25412; }
+    border-top: 2px solid #e25412;
+    font-family: "Roboto", sans-serif; }
   .about-about1 a {
     text-decoration: none;
     color: #fff; }
@@ -278,7 +282,8 @@ nav {
     text-transform: uppercase;
     font-size: 1.6em;
     border-bottom: 2px solid #e25412;
-    padding-top: 0; }
+    padding-top: 0;
+    font-family: "Roboto", sans-serif; }
   .about-goals ul {
     padding: 0;
     margin: 0;
