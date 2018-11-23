@@ -199,6 +199,9 @@ nav {
     text-decoration: none;
     color: #fff; }
 
+.apply:hover {
+  background-color: #003f6b; }
+
 .learn {
   grid-column: 3;
   grid-row: 3;
@@ -214,6 +217,9 @@ nav {
     font-size: 2em;
     text-decoration: none;
     color: #fff; }
+
+.learn:hover {
+  background-color: #003f6b; }
 
 /* about page grid */
 .about-grid {
@@ -310,6 +316,9 @@ nav {
     color: white;
     font-family: Arial;
     line-height: 60px; }
+
+.applynow:hover {
+  background-color: #035086; }
 
 /* end about grid */
 /* about lower div */

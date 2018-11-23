@@ -230,6 +230,9 @@ nav {
     color: $third_color;
   }
 }
+.apply:hover{
+  background-color: $primary-color;
+}
  
 .learn {
   grid-column: 3;
@@ -248,6 +251,9 @@ nav {
     text-decoration: none;
     color: $third_color;
   }
+}
+.learn:hover{
+  background-color: $primary-color;
 }
 
 /* about page grid */
@@ -363,6 +369,9 @@ nav {
     font-family: Arial;
     line-height: 60px;
   }
+}
+.applynow:hover{
+  background-color:rgb(3, 80, 134);
 }
 
 /* end about grid */
