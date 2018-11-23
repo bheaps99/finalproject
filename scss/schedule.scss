@@ -1,3 +1,7 @@
+// Import partials
+@import "variables";
+@import "mixins";
+
 .container {
   max-width: 980px;
   margin: 0 auto;
@@ -6,147 +10,140 @@
   height: auto;
 }
 
+// Section 1
 .section-01 {
   height: 400px;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.8),
+      rgba(20, 20, 20, 0.8),
       rgba(255, 255, 255, 0.6)
     ),
     url("../images/calendar.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-.heading {
-  padding-top: 50px;
-  text-align: center;
-  font-size: 3em;
-  color: rgb(0, 63, 107);
-}
-
-.section-02 {
-  padding: 50px 10px;
-  margin: 0;
-  background-color: rgb(0, 63, 107);
-  color: #000;
-}
-
-.section-02 li {
-  line-height: 2em;
-}
-
-.schedule-grid {
-  display: grid;
-  grid-gap: 30px;
-  padding: 0 30px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-}
-
-.box {
-  position: relative;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: lightgrey;
-  transition: all 0.3s;
-}
-
-.box:hover {
-  transform: scale(1.1);
-  background-color: rgb(0, 63, 107);
-  border: 1px solid white;
-  color: #fff;
-}
-
-span h2 {
-  text-align: center;
-}
-
-.course-content {
-  padding: 0 5px;
-}
-
-/* Media Queries */
-
-@media (max-width: 900px) {
-  .section-02 {
-    padding: 50px 0;
-  }
-
-  .schedule-grid {
-    grid-gap: 25px;
-  }
-
-  .box:hover {
-    transform: scale(1.03);
-  }
-}
-
-@media (max-width: 800px) {
-  .schedule-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
-}
-
-@media (max-width: 680px) {
-  .schedule-grid {
-    padding: 0 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .section-01 {
+  @media (max-width: $phone) {
     height: 320px;
   }
 
-  .heading {
-    font-size: 3em;
-  }
-
-  .section-02 {
-    padding: 0;
-  }
-
-  .schedule-grid {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .box {
-    overflow: auto;
-    cursor: pointer;
-    border-bottom: 1px solid white;
-    border-radius: 0;
-    background-color: rgb(0, 63, 107);
-    color: white;
-  }
-
-  .box:hover {
-    transform: none;
-    background-color: lightgrey;
-    color: blue;
-    border: 1px solid white;
-  }
-
-  .course-content {
-    padding-left: 30px;
-  }
-}
-
-@media (max-width: 400px) {
-  .section-01 {
+  @media (max-width: $phone-small) {
     height: 250px;
     background-image: none;
     background-color: #fff;
   }
+
   .heading {
-    font-size: 2em;
+    padding-top: 70px;
+    text-align: center;
+    font-size: 3.5em;
+    color: $primary-color;
+    text-transform: uppercase;
+
+    @media (max-width: $phone) {
+      font-size: 3em;
+    }
+
+    @media (max-width: $phone-small) {
+      font-size: 2em;
+    }
+
+    h1 {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+// Section 2
+.section-02 {
+  padding: 50px 10px;
+  margin: 0;
+  background-color: $primary-color;
+  color: $second-color;
+
+  @media (max-width: $tablet-large) {
+    padding: 50px 0;
   }
 
-  .course-content {
-    padding-left: 15px;
+  @media (max-width: $phone) {
+    padding: 0;
+  }
+
+  li {
+    line-height: 2em;
+  }
+
+  .schedule-grid {
+    display: grid;
+    grid-gap: 30px;
+    padding: 0 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    @media (max-width: $tablet-large) {
+      grid-gap: 25px;
+    }
+
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+    }
+
+    @media (max-width: $phone-large) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: $phone) {
+      @include no-space;
+      @include flex-column;
+    }
+  }
+
+  .box {
+    position: relative;
+    border: $black-border;
+    border-radius: $box-radius;
+    background-color: lightgrey;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    @media (max-width: $phone) {
+      border-bottom: $white-border;
+      border-radius: 0;
+      background-color: $primary-color;
+      color: $third-color;
+    }
+
+    span h2 {
+      text-align: center;
+    }
+
+    .course-content {
+      padding: 0 5px;
+
+      @media (max-width: $phone) {
+        padding-left: 30px;
+      }
+
+      @media (max-width: $phone-small) {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .box:hover {
+    transform: scale(1.1);
+    background-color: $primary-color;
+    border: $white-border;
+    color: $third-color;
+
+    @media (max-width: $tablet-large) {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: $phone) {
+      transform: none;
+      background-color: lightgrey;
+      color: $primary-color;
+      border: $white-border;
+    }
   }
 }

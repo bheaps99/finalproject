@@ -1,0 +1,11 @@
+// No margin and padding
+@mixin no-space {
+  padding: 0;
+  margin: 0;
+}
+
+// Flex column
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
