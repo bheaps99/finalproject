@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="title"><div class="BCIT">BCIT</div></div>
+        <button class="hamburger">
+          <div class="hamburger-content">
+            <span class="hamburger-icon" tabindex="-1"> &#9776; </span>
+            <span class="hamburger-text"> Menu </span>
+          </div>
+        </button>
+        <nav>
+          <ul class="main-nav" id="link-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="contact-section">
+          <div class="form-container">
+            <div class="row-header"><h1>CONTACT US &nbsp;</h1></div>
+            <div class="row-body">
+              <form action="#">
+                <ul>
+                  <li>
+                    <p class="left">
+                      <label for="first_name">First name</label>
+                      <input
+                        type="text"
+                        name="first_name"
+                        placeholder="enter your first name here"
+                      />
+                    </p>
+                    <p class="pull-right">
+                      <label for="last_name">Last name</label>
+                      <input
+                        type="text"
+                        name="last_name"
+                        placeholder="enter your last name here"
+                      />
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      <label for="email"
+                        >Email <span class="req">*</span></label
+                      >
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="e.g. youremail@gmail.com"
+                      />
+                    </p>
+                  </li>
+                  <li><div class="divider"></div></li>
+                  <li>
+                    <label for="comments">Comments</label>
+                    <textarea cols="46" rows="3" name="comments"></textarea>
+                  </li>
+
+                  <li>
+                    <input
+                      class="btn btn-submit"
+                      type="submit"
+                      value="Submit"
+                    />
+                    <small>or press <strong>ENTER</strong></small>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="row">
+          <div class="first column" id="logo-footer">
+            <img
+              class="bcit-logo"
+              src="images/logo.jpg"
+              alt="British Columbia Institute of Technology"
+            />
+          </div>
+          <div class="second column">
+            <p>British Columbia Institute of Technology</p>
+            <p>3700 Willingdon Avenue</p>
+            <p>Burnaby, British Columbia</p>
+            <p>Canada V5G 3H2</p>
+            <p>Telephone: (604) 434-5734</p>
+            <p>Toll-free (CAN/US): 1-866-434-1610</p>
+          </div>
+          <div class="third column">
+            <p>Follow us!</p>
+            <p>
+              <a href="https://www.facebook.com/bcit.ca/" target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </p>
+            <p>
+              <a
+                href="https://www.instagram.com/lifeatbcit/?hl=en"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </p>
+            <p>
+              <a
+                href="https://twitter.com/bcit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/show-nav.js"></script>
+  </body>
+</html>
