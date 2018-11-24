@@ -1,0 +1,123 @@
+main {
+  background-color: #fff; }
+
+.contact-section {
+  padding: 100px 0; }
+
+.form-container {
+  max-width: 700px;
+  min-width: 324px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid grey; }
+
+.row-header {
+  width: 100%;
+  height: 250px;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+  padding: 1.5em 2.5em;
+  border-bottom: 1px solid grey;
+  background: url("../images/bcit_980.jpg");
+  color: #fff; }
+
+.row-body {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0 2.5em;
+  padding: 0.5em 2.5em 1em; }
+
+.pull-right {
+  float: right; }
+
+h1 {
+  display: inline-block;
+  font-weight: 100;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 0 0 0.1em 0;
+  padding: 0 0 0.4em 0; }
+
+h3 {
+  margin: 1em 0 0.4em 0; }
+
+.btn {
+  display: inline-block;
+  padding: 0.74em 1.5em;
+  margin: 1.5em 0 0;
+  color: #fff;
+  border-width: 0 0 0 0;
+  border-bottom: 5px solid;
+  text-transform: uppercase;
+  background-color: #003f6b; }
+
+form {
+  max-width: 100%;
+  display: block; }
+  form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    form ul li {
+      margin: 0 0 0.25em 0;
+      clear: both;
+      display: inline-block;
+      width: 100%; }
+      form ul li:last-child {
+        margin: 0; }
+      form ul li p {
+        margin: 0;
+        padding: 0;
+        float: left; }
+        form ul li p.right {
+          float: right; }
+      form ul li .divider {
+        margin: 0.5em 0 0.5em 0;
+        border: 0;
+        height: 1px;
+        width: 100%;
+        display: block;
+        background-color: #003f6b; }
+      form ul li .req {
+        color: #003f6b; }
+  form label {
+    display: block;
+    margin: 0 0 0.5em 0;
+    color: #003f6b; }
+  form input {
+    margin: 0 0 0.5em 0;
+    border: 1px solid grey;
+    padding: 6px 10px;
+    color: #000; }
+  form textarea {
+    border: 1px solid grey;
+    padding: 6px 10px;
+    width: 100%;
+    color: #fff; }
+  form small {
+    color: #003f6b;
+    margin: 0 0 0 0.5em; }
+
+@media only screen and (max-width: 480px) {
+  .pull-right {
+    float: none; }
+
+  input {
+    width: 100%; }
+
+  label {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    clear: both; }
+
+  li,
+  p {
+    width: 100%; }
+
+  input.btn {
+    margin: 1.5em 0 0.5em; }
+
+  li small {
+    display: none; } }
+
+/*# sourceMappingURL=contact.css.map */
