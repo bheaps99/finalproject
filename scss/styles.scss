@@ -11,7 +11,7 @@ html {
   box-sizing: inherit;
 }
 img {
-@include img;
+  @include img;
 }
 
 body {
@@ -31,6 +31,14 @@ body {
   height: auto;
 }
 
+.container {
+  max-width: $wrapper-size;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: auto;
+}
+
 /*
 about wrapper
 */
@@ -44,7 +52,7 @@ about wrapper
 }
 
 header {
-  height: $nav-height;;
+  height: $nav-height;
   @include basic-flex;
   width: 100%;
   background-color: $primary-color;
@@ -107,9 +115,8 @@ nav {
     font-size: 1.1em;
     font-weight: 200;
   }
-  
 }
- 
+
 .main-grid {
   display: grid;
   grid-template-columns:
@@ -135,7 +142,7 @@ nav {
     padding-bottom: 30px;
     border-bottom: 2px solid rgb(226, 84, 18);
     width: 300px;
-    font-family:$title-font;
+    font-family: $title-font;
   }
 
   p {
@@ -159,7 +166,7 @@ nav {
     padding-top: 10px;
     border-bottom: 2px solid rgb(226, 84, 18);
     border-top: 2px solid rgb(226, 84, 18);
-    font-family:$title-font;
+    font-family: $title-font;
   }
 
   a {
@@ -174,7 +181,7 @@ nav {
     text-transform: uppercase;
   }
 }
- 
+
 .video {
   grid-row: 2;
   grid-column: 5;
@@ -230,10 +237,10 @@ nav {
     color: $third_color;
   }
 }
-.apply:hover{
+.apply:hover {
   background-color: $primary-color;
 }
- 
+
 .learn {
   grid-column: 3;
   grid-row: 3;
@@ -252,7 +259,7 @@ nav {
     color: $third_color;
   }
 }
-.learn:hover{
+.learn:hover {
   background-color: $primary-color;
 }
 
@@ -282,7 +289,7 @@ nav {
     padding-bottom: 30px;
     border-bottom: 2px solid rgb(226, 84, 18);
     width: 300px;
-    font-family:$title-font;
+    font-family: $title-font;
   }
 
   p {
@@ -308,7 +315,7 @@ nav {
     padding-top: 10px;
     border-bottom: 2px solid rgb(226, 84, 18);
     border-top: 2px solid rgb(226, 84, 18);
-    font-family:$title-font;
+    font-family: $title-font;
   }
 
   a {
@@ -322,7 +329,7 @@ nav {
     text-transform: uppercase;
   }
 }
- 
+
 .about-goals {
   grid-column: 4;
   grid-row: 2 / span 2;
@@ -337,7 +344,7 @@ nav {
     font-size: 1.6em;
     border-bottom: 2px solid rgb(226, 84, 18);
     padding-top: 0;
-    font-family:$title-font;
+    font-family: $title-font;
   }
 
   ul {
@@ -370,8 +377,8 @@ nav {
     line-height: 60px;
   }
 }
-.applynow:hover{
-  background-color:rgb(3, 80, 134);
+.applynow:hover {
+  background-color: rgb(3, 80, 134);
 }
 
 /* end about grid */
@@ -396,7 +403,7 @@ nav {
     margin: 0;
   }
 }
- 
+
 footer {
   background-color: rgb(1, 41, 69);
   padding: 15px 50px;
@@ -462,7 +469,7 @@ footer {
     outline: 5px solid #69c1db;
   }
   .hamburger-text {
-    position: absolute; 
+    position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
@@ -506,7 +513,7 @@ footer {
       border-bottom: none;
     }
   }
-  
+
   .show nav {
     height: 212px;
     margin-right: 0;
@@ -638,7 +645,6 @@ footer {
       }
     }
   }
- 
 }
 @media only screen and (max-width: 480px) {
   .row {
