@@ -50,6 +50,9 @@ h3 {
   text-transform: uppercase;
   background-color: #003f6b; }
 
+.btn:hover {
+  background-color: #0476c7; }
+
 form {
   max-width: 100%;
   display: block; }

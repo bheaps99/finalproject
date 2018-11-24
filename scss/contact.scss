@@ -56,6 +56,9 @@ h3 {
   text-transform: uppercase;
   background-color: $primary-color;
 }
+.btn:hover{
+  background-color:rgb(4, 118, 199);
+}
 
 form {
   max-width: 100%;
