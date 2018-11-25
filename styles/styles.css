@@ -333,18 +333,23 @@ nav {
 .loweroverview {
   color: #fff;
   background-color: #491a1a;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 20px;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 35px;
   padding-top: 20px;
   font-size: 0.9em;
   margin-bottom: 25px; }
   .loweroverview h2 {
+    font-size: 2em;
     text-transform: uppercase;
-    margin: 15px auto;
-    text-align: center; }
+    margin: 20px auto 25px auto;
+    text-align: center;
+    border-bottom: 2px solid #e25412;
+    padding-bottom: 10px;
+    width: 320px; }
   .loweroverview p {
-    margin: 0; }
+    margin: 0;
+    line-height: 1.6; }
 
 footer {
   background-color: #012945;
