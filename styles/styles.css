@@ -89,7 +89,8 @@ nav {
     padding-left: 2px;
     padding-right: 2px; }
   nav li:hover {
-    border-bottom: 2px solid #491a1a; }
+    border-bottom: 2px solid white;
+    /*rgb(73, 26, 26);*/ }
   nav a {
     text-transform: uppercase;
     display: block;
