@@ -118,9 +118,10 @@ form {
     float: left;
     clear: both; }
 
-  li,
+  .form-li,
   p {
-    width: 100%; }
+    width: 100%;
+    padding: 10px 0; }
 
   input.btn {
     margin: 1.5em 0 0.5em; }
@@ -128,8 +129,8 @@ form {
   li small {
     display: none; }
 
-  .radio {
-    margin-top: 50px; }
+  .p-email {
+    margin-bottom: 20px; }
 
   .radio input {
     width: auto; } }
