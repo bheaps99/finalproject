@@ -335,7 +335,7 @@ nav {
   background-color: #491a1a;
   padding-left: 8%;
   padding-right: 8%;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   padding-top: 20px;
   font-size: 0.9em;
   margin-bottom: 25px; }
@@ -349,7 +349,8 @@ nav {
     width: 320px; }
   .loweroverview p {
     margin: 0;
-    line-height: 1.6; }
+    line-height: 1.6;
+    margin-bottom: 20px; }
 
 footer {
   background-color: #012945;
