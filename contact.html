@@ -66,7 +66,7 @@
                   <li>
                     <p>
                       <label for="email"
-                        >Email <span class="req">*</span></label
+                        >Email </label
                       >
                       <input
                         type="email"
@@ -75,6 +75,23 @@
                         required
                       />
                     </p>
+                    <p class="pull-right radio">
+                      <input type="radio" name="student" value="current">  Current Student<br>
+                      <input type="radio" name="student" value="prospective">  Prospective student<br>
+                    </p>
+                  <li>
+                    <p class="pull-right">
+                      <label for="student_number">BCIT Student Number</label>
+                      <input
+                        type="text"
+                        name="student_ number"
+                        placeholder="ex. a00111222"
+                        pattern=^$|[aA][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]
+                      />
+                    </p>
+                  </li>
+
+
                   </li>
                   <li><div class="divider"></div></li>
                   <li>

@@ -117,6 +117,12 @@ form {
     color: $primary-color;
     margin: 0 0 0 0.5em;
   }
+  .radio {
+    color: $second-color;
+    padding-top: 10px;
+    line-height: 1.4;
+    padding-right: 24px;
+  }
 }
 
 // Media Queries
@@ -143,5 +149,12 @@ form {
   }
   li small {
     display: none;
+  }
+
+  .radio {
+    margin-top: 50px;
+  }
+  .radio input {
+    width:auto;
   }
 }

@@ -99,6 +99,11 @@ form {
   form small {
     color: #003f6b;
     margin: 0 0 0 0.5em; }
+  form .radio {
+    color: #000;
+    padding-top: 10px;
+    line-height: 1.4;
+    padding-right: 24px; }
 
 @media only screen and (max-width: 480px) {
   .pull-right {
@@ -121,6 +126,12 @@ form {
     margin: 1.5em 0 0.5em; }
 
   li small {
-    display: none; } }
+    display: none; }
+
+  .radio {
+    margin-top: 50px; }
+
+  .radio input {
+    width: auto; } }
 
 /*# sourceMappingURL=contact.css.map */
