@@ -103,17 +103,16 @@ nav {
   }
 
   li:hover {
-    border-bottom: 2px solid white;/*rgb(73, 26, 26);*/
+    border-bottom: 2px solid white; /*rgb(73, 26, 26);*/
   }
 
   a {
     text-transform: uppercase;
     display: block;
     line-height: $nav-height;
-    text-decoration: none;
-    color: $third-color;
     font-size: 1.1em;
     font-weight: 200;
+    @include no-decoration;
   }
 }
 
@@ -170,8 +169,7 @@ nav {
   }
 
   a {
-    text-decoration: none;
-    color: $third-color;
+    @include no-decoration;
   }
 
   p {
@@ -233,8 +231,7 @@ nav {
     transform: translate(-50%, -50%);
     margin: 0;
     font-size: 2em;
-    text-decoration: none;
-    color: $third_color;
+    @include no-decoration;
   }
 }
 .apply:hover {
@@ -255,8 +252,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2em;
-    text-decoration: none;
-    color: $third_color;
+    @include no-decoration;
   }
 }
 .learn:hover {
@@ -319,8 +315,7 @@ nav {
   }
 
   a {
-    text-decoration: none;
-    color: $third-color;
+    @include no-decoration;
   }
 
   p {
@@ -371,10 +366,9 @@ nav {
   a {
     display: block;
     text-transform: uppercase;
-    text-decoration: none;
-    color: white;
     font-family: Arial;
     line-height: 60px;
+    @include no-decoration;
   }
 }
 .applynow:hover {
@@ -398,7 +392,7 @@ nav {
     text-transform: uppercase;
     margin: 20px auto 25px auto;
     text-align: center;
-    border-bottom:2px solid rgb(226, 84, 18);
+    border-bottom: 2px solid rgb(226, 84, 18);
     padding-bottom: 10px;
     width: 320px;
   }
@@ -416,8 +410,7 @@ footer {
   font-size: 0.9em;
 
   a {
-    text-decoration: none;
-    color: white;
+    @include no-decoration;
   }
 }
 
