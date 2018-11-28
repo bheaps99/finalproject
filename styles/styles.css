@@ -39,7 +39,7 @@ about wrapper
 .about-wrapper {
   max-width: 980px;
   margin: 0 auto;
-  background: grey url("../images/bcit3.jpg");
+  background: grey url("../images/about_980.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: auto; }
@@ -515,6 +515,15 @@ footer {
     grid-column: 1;
     grid-row: 5; } }
 @media only screen and (max-width: 655px) {
+  /*about and index backgrounds smaller image files */
+  .wrapper {
+    background: grey url("../images/bcit_655.jpg");
+    background-repeat: no-repeat; }
+
+  .about-wrapper {
+    background: grey url("../images/about_655.jpg");
+    background-repeat: no-repeat; }
+
   .main-grid {
     display: grid;
     grid-template-columns: minmax(160px, 400px) minmax(160px, 400px);
@@ -566,6 +575,15 @@ footer {
         padding: 0;
         line-height: 40px; } }
 @media only screen and (max-width: 480px) {
+  /*home and about background images smaller images*/
+  .wrapper {
+    background: grey url("../images/bcit_480.jpg");
+    background-repeat: no-repeat; }
+
+  .about-wrapper {
+    background: grey url("../images/about_480.jpg");
+    background-repeat: no-repeat; }
+
   .row {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto; }

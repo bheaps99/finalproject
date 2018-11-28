@@ -45,7 +45,7 @@ about wrapper
 .about-wrapper {
   max-width: $wrapper-size;
   margin: 0 auto;
-  background: $wrapper-background url("../images/bcit3.jpg");
+  background: $wrapper-background url("../images/about_980.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   height: auto;
@@ -592,6 +592,17 @@ footer {
   }
 }
 @media only screen and (max-width: 655px) {
+  /*about and index backgrounds smaller image files */
+  .wrapper{
+    background: $wrapper-background url("../images/bcit_655.jpg");
+    background-repeat: no-repeat;
+  }
+  .about-wrapper{
+    background: $wrapper-background url("../images/about_655.jpg");
+    background-repeat: no-repeat;
+  }
+
+  
   .main-grid {
     display: grid;
     grid-template-columns: minmax(160px, 400px) minmax(160px, 400px);
@@ -653,6 +664,17 @@ footer {
   }
 }
 @media only screen and (max-width: 480px) {
+  /*home and about background images smaller images*/ 
+  .wrapper{
+    background: $wrapper-background url("../images/bcit_480.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .about-wrapper{
+    background: $wrapper-background url("../images/about_480.jpg");
+    background-repeat: no-repeat;
+  }
+
   .row {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
