@@ -23,32 +23,24 @@ body {
 }
 
 .wrapper {
-  max-width: $wrapper-size;
-  margin: 0 auto;
+  @include wrapper;
   background: $wrapper-background url("../images/bcit_980.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  height: auto;
 }
 
 .container {
-  max-width: $wrapper-size;
-  margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: auto;
+  @include wrapper;
 }
 
 /*
 about wrapper
 */
 .about-wrapper {
-  max-width: $wrapper-size;
-  margin: 0 auto;
+  @include wrapper;
   background: $wrapper-background url("../images/bcit3.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  height: auto;
 }
 
 header {
@@ -84,7 +76,7 @@ header {
 
 nav {
   height: $nav-height;
-  width: 505px;
+  width: 450px;
   margin-right: 15px;
 
   ul {
@@ -96,8 +88,8 @@ nav {
   li {
     flex: 1;
     display: block;
-    margin-left: 13px;
-    margin-right: 13px;
+    margin-left: 17px;
+    margin-right: 17px;
     padding-left: 2px;
     padding-right: 2px;
   }

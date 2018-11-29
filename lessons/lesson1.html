@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <div class="about-wrapper">
+    <div class=".container">
       <header>
         <div class="title"><div class="BCIT">BCIT</div></div>
         <button class="hamburger">
@@ -31,12 +31,173 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../schedule.html">Schedule</a></li>
-            <li><a href="../lessons.html">Lessons</a></li>
             <li><a href="../contact.html">Contact</a></li>
           </ul>
         </nav>
       </header>
-      <main><section></section></main>
+      <main>
+        <section class="lesson-grid">
+          <div class="lesson-title">
+            <h1>Lesson One</h1>
+            <ul>
+              <li>Introduction</li>
+              <li>Orientation</li>
+              <li>Web Development Tools</li>
+              <li>Standards based development</li>
+              <li>To Do</li>
+            </ul>
+          </div>
+
+          <div class="instructors">
+            <h1>Contact</h1>
+            <div>
+              <p>Jeff Parker</p>
+              <p>jeffrey_parker@bcit.ca</p>
+            </div>
+            <div>
+              <p>Michael Whyte</p>
+              <p>michael_whyte@bcit.ca</p>
+            </div>
+          </div>
+
+          <div class="lesson-content">
+            <div>
+              <h1>Orientation</h1>
+              <p>
+                BCIT lab computers are re-imaged each day. Files you save on the
+                local C: drive of a lab computer will be erased after the
+                computer power is cycled.
+              </p>
+              <p>
+                COMP 1950 homework assignments, quizzes, in class exercises and
+                example code can be accessed via Desire 2 Learn (D2L). Use your
+                BCIT student number and password to access D2L. Course materials
+                will become avilable as the course progresses. It is your
+                responsibility to log in and download files as they become
+                available.
+              </p>
+            </div>
+            <div>
+              <h1>Web Development Tools</h1>
+              <p>
+                Each student will get a personal webspace where you will publish
+                your homework assignments. This is not a continuation of your
+                COMP1850 site (if you had one). This site is primarily for you
+                to house your exercises, assignments and group work. Make it a
+                site that is usable and functional.
+              </p>
+              <p>
+                Use Filezilla, or any FTP client to connect to bcitcomp.ca. The
+                bcitcomp.ca server provides you with a space on the internet
+                where you can publish your homework and assignments. INSERT
+                IMAGE
+              </p>
+              <p>
+                There are several development tools to choose from. In COMP 1950
+                we will use the open source Integrated Devlopment Environment
+                (IDE) from Microsoft called Visual Studio Code (VS Code). This
+                is more than a simple text editor, it provides robust code
+                editing, maintenance and testing features, as well as supporting
+                plugins to further increase it's capabilities.
+              </p>
+            </div>
+            <div>
+              <h1>W3C: World Wide Web Consortium</h1>
+              <p>
+                The World Wide Web Consortium (W3C) is an international
+                community where Member organizations, a full-time staff, and the
+                public work together to develop Web standards. Led by Web
+                inventor and Director Tim Berners-Lee and CEO Jeffrey Jaffe,
+                W3C's mission is to lead the Web to its full potential. Contact
+                W3C for more information.
+              </p>
+              <p>
+                The World Wide Web Consortium (W3C) was founded by Tim
+                Berners-Lee after he left the European Organization for Nuclear
+                Research (CERN) in October, 1994. It was founded at the
+                Massachusetts Institute of Technology Laboratory for Computer
+                Science (MIT/LCS) with support from the European Commission and
+                the Defense Advanced Research Projects Agency (DARPA), which had
+                pioneered the ARPANET, one of the predecessors to the Internet
+              </p>
+            </div>
+            <div>
+              <h1>Standards: File and Folder Naming</h1>
+              <p>
+                HTTP urls cannot contain certain characters, and certain
+                characters will cause unwanted effects and behaviours when used
+                in a url
+              </p>
+              <h1>File Management</h1>
+              <p>
+                Including an index.html file in every folder on your server will
+                ensure users cannot go snooping around your filesystem. the
+                index.html file can be a blank HTML page if you like, as long as
+                the user does not see a list of files when they request a folder
+              </p>
+              <h1>Standards: Code style and Organization</h1>
+              <p>
+                In COMP1950 students are expected to present a readable, well
+                organized code style:
+              </p>
+              <img alt="SCRENESHOT" />
+              <p>
+                In HTML, use carriage return and tabs to indicate parent-child
+                tag relationships. Likewise, code your CSS to make it easy to
+                see which rules are applied to each selector.
+              </p>
+              <img alt="sCreenshot" />
+              <p>
+                Separate different file types into folders. At minimum, keep all
+                non-html files in their own folder. If you like you can make a
+                dedicated 'html' folder for your .html files as well.
+              </p>
+              <img alt="screenshot" />
+            </div>
+            <div>
+              <h1>Semantic Markup</h1>
+              <p>
+                When writing semantic markup, we use HTML tags to tell browsers
+                something about the contents of the element. In semantic markup,
+                tags are no longer just a way to get content to show up on a web
+                page in a human-readable format. The tags themselves become a
+                way to tell a machine (whether a browser, a computer, a
+                smartphone, or another smart device) something about the meaning
+                of the content. To write semantic markup, we must use HTML tags
+                correctly so that our markup is both human-readable and
+                machine-readable. Read more:
+                https://html.com/semantic-markup/#ixzz5Y7dcZLez
+              </p>
+            </div>
+            <div>
+              <h1>To Do</h1>
+              <ul>
+                <li>
+                  Download, review, and complete the homework assignment from
+                  D2L
+                </li>
+                <li>
+                  Confirm you have access to your online webspace and that your
+                  FTP credentials are valid
+                </li>
+                <li>
+                  Be sure you know how to add/edit/remove HTML and CSS using a
+                  browser tool
+                </li>
+                <li>
+                  Install VS Code on your home computer or laptop. Explore some
+                  of the accompanying help documentation to familiarize yourself
+                  with how to code your HTML and CSS using this tool.
+                </li>
+                <li>Download VS Code</li>
+                <li>Setup and basics of VS Code</li>
+                <li>VS Code help documentation</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
       <footer>
         <div class="row">
           <div class="first column" id="logo-footer">
