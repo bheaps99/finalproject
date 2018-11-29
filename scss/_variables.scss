@@ -38,8 +38,6 @@ $item2-height: 230px;
   @return $item1-height - $item2-height;
 }
 
-@function defaultHeight() {
-}
-
-@function defaultWidth() {
+@function setDefaultHeight($item1-height: auto) {
+  @return $item1-height;
 }

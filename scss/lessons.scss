@@ -31,7 +31,7 @@
   .item-01 {
     background-color: $primary-color;
     width: $item1-width;
-    height: $item1-height;
+    height: setDefaultHeight();
 
     @media (max-width: $tablet-large) {
       width: $item1-width - 50px;
