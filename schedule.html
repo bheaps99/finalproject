@@ -1,86 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Course Schedule</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-    <link rel="stylesheet" type="text/css" href="styles/schedule.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
-      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="title"><div class="BCIT">BCIT</div></div>
-        <button class="hamburger">
-          <div class="hamburger-content">
-            <span class="hamburger-icon" tabindex="-1"> &#9776; </span>
-            <span class="hamburger-text"> Menu </span>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Course Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles/schedule.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="title">
+        <div class="BCIT">BCIT</div>
+      </div>
+      <button class="hamburger">
+        <div class="hamburger-content">
+          <span class="hamburger-icon" tabindex="-1"> &#9776; </span>
+          <span class="hamburger-text"> Menu </span>
+        </div>
+      </button>
+      <nav>
+        <ul class="main-nav" id="link-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section-01">
+        <div class="heading">
+          <h1>Course Schedule</h1>
+          <div class="subheading">
+            <h2>Choose a day to open the lesson page for that day.</h2>
           </div>
-        </button>
-        <nav>
-          <ul class="main-nav" id="link-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="schedule.html">Schedule</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="section-01">
-          <div class="heading">
-            <h1>Course Schedule</h1>
-            <div class="subheading"><h2>Choose a day to open the lesson page for that day.</h2></div>
-          </div>
+        </div>
       </section>
       <section class="section-02">
         <div class="schedule-grid">
           <div class="box day-01" onclick="location.href='lessons/lesson1.html';">
-              <span><h2>Day 1</h2></span>
-              <div class="course-content">
-                <ul>
-                  <li>Course Introduction</li>
-                  <li>Setup development environment</li>
-                  <li>FTP Setup</li>
-                  <li>HTML and CSS Review</li>
-                  <li>HTML5 Video and Audio</li>
-                  <li>Assignment 1</li>
-                </ul>
-              </div>
+            <span><h2>Day 1</h2></span>
+            <div class="course-content">
+              <ul>
+                <li>Course Introduction</li>
+                <li>Setup development environment</li>
+                <li>FTP Setup</li>
+                <li>HTML and CSS Review</li>
+                <li>HTML5 Video and Audio</li>
+                <li>Assignment 1</li>
+              </ul>
+            </div>
           </div>
-          <div class="box day-02"  onclick="location.href='lessons/lesson1.html';">
-              <span><h2>Day 2</h2></span>
-              <div class="course-content">
-                <ul>
-                  <li>CSS @font-face</li>
-                  <li>Responsive web design</li>
-                  <li>Assignment 2</li>
-                </ul>
-              </div>
+          <div class="box day-02" onclick="location.href='lessons/lesson2.html';">
+            <span><h2>Day 2</h2></span>
+            <div class="course-content">
+              <ul>
+                <li>CSS @font-face</li>
+                <li>Responsive web design</li>
+                <li>Assignment 2</li>
+              </ul>
+            </div>
           </div>
-          <div class="box day-03"  onclick="location.href='lessons/lesson1.html';">
-              <span><h2>Day 3</h2></span>
-              <div class="course-content">
-                <ul>
-                  <li>Flexbox</li>
-                  <li>Assignment 3</li>
-                </ul>
-              </div>
-          </div>
-          <div class="box day-04">
-            <span><h2>Day 4</h2></span>
+          <div class="box day-03" onclick="location.href='lessons/lesson3.html';">
+            <span><h2>Day 3</h2></span>
             <div class="course-content">
               <ul>
                 <li>CSS3 Styling</li>
                 <li>CSS3 Selectors</li>
                 <li>CSS transitions and animations</li>
+                <li>Assignment 3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="box day-04">
+            <span><h2>Day 4</h2></span>
+            <div class="course-content">
+              <ul>
+                <li>Flexbox</li>
                 <li>Assignment 4</li>
               </ul>
             </div>

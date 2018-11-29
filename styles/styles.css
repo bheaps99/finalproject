@@ -371,7 +371,7 @@ footer {
 
 .row {
   display: grid;
-  grid-template-columns: 20% 40% 40%;
+  grid-template-columns: 20% 44% 36%;
   grid-template-rows: 1fr; }
 
 .row .second {
@@ -433,7 +433,8 @@ footer {
     height: 0;
     overflow: hidden;
     width: 100%;
-    background-color: rgba(39, 39, 80, 0.3); }
+    background-color: rgba(39, 39, 80, 0.3);
+    transition: height 0.3s ease; }
     nav ul {
       display: block;
       background-color: rgba(39, 39, 80, 0.3); }
@@ -512,7 +513,10 @@ footer {
   .applynow {
     display: block;
     grid-column: 1;
-    grid-row: 5; } }
+    grid-row: 5; }
+
+  footer {
+    padding: 15px 40px; } }
 @media only screen and (max-width: 655px) {
   /*about and index backgrounds smaller image files */
   .wrapper {
@@ -552,7 +556,7 @@ footer {
   .apply {
     grid-row: 5;
     grid-column: 2; } }
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 680px) {
   .title {
     left: 15px; }
 
