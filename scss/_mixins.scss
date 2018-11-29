@@ -6,6 +6,12 @@
   margin: 0;
 }
 
+// No text decoration for links
+@mixin no-decoration {
+  text-decoration: none;
+  color: $third-color;
+}
+
 // Sections
 @mixin section-heading {
   height: 400px;

@@ -95,10 +95,10 @@ nav {
     text-transform: uppercase;
     display: block;
     line-height: 65px;
-    text-decoration: none;
-    color: #fff;
     font-size: 1.1em;
-    font-weight: 200; }
+    font-weight: 200;
+    text-decoration: none;
+    color: #fff; }
 
 .main-grid {
   display: grid;
@@ -320,10 +320,10 @@ nav {
   .applynow a {
     display: block;
     text-transform: uppercase;
-    text-decoration: none;
-    color: white;
     font-family: Arial;
-    line-height: 60px; }
+    line-height: 60px;
+    text-decoration: none;
+    color: #fff; }
 
 .applynow:hover {
   background-color: #035086; }
@@ -358,7 +358,7 @@ footer {
   font-size: 0.9em; }
   footer a {
     text-decoration: none;
-    color: white; }
+    color: #fff; }
 
 .logo-div {
   height: 65px;
