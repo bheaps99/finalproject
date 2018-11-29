@@ -4,6 +4,7 @@
 
 main {
   background-color: grey;
+  font-family: $content-font;
 }
 
 .contact-section {
@@ -42,6 +43,7 @@ h1 {
   border-bottom: 1px solid hsla(100%, 100%, 100%, 0.3);
   margin: 0 0 0.1em 0;
   padding: 0 0 0.4em 0;
+  font-family:$title-font;
 }
 h3 {
   margin: 1em 0 0.4em 0;

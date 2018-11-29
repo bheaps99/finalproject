@@ -1,5 +1,6 @@
 main {
-  background-color: grey; }
+  background-color: grey;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif; }
 
 .contact-section {
   padding: 100px 0; }
@@ -35,7 +36,8 @@ h1 {
   font-weight: 100;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin: 0 0 0.1em 0;
-  padding: 0 0 0.4em 0; }
+  padding: 0 0 0.4em 0;
+  font-family: "Roboto", sans-serif; }
 
 h3 {
   margin: 1em 0 0.4em 0; }
