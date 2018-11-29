@@ -480,6 +480,7 @@ footer {
     overflow: hidden;
     width: 100%;
     background-color: rgba(39, 39, 80, 0.3);
+    transition: height 0.3s ease;
 
     ul {
       display: block;

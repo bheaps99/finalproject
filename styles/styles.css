@@ -433,7 +433,8 @@ footer {
     height: 0;
     overflow: hidden;
     width: 100%;
-    background-color: rgba(39, 39, 80, 0.3); }
+    background-color: rgba(39, 39, 80, 0.3);
+    transition: height 0.3s ease; }
     nav ul {
       display: block;
       background-color: rgba(39, 39, 80, 0.3); }
