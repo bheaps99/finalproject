@@ -6,7 +6,7 @@
   @media (max-width: 600px) {
     .section-01 {
       height: 320px; } }
-  @media (max-width: 400px) {
+  @media (max-width: 450px) {
     .section-01 {
       height: 250px; } }
   .section-01 .heading {
@@ -23,7 +23,7 @@
       @media (max-width: 600px) {
         .section-01 .heading h1 {
           font-size: 3em; } }
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         .section-01 .heading h1 {
           font-size: 2em; } }
     .section-01 .heading .subheading {
@@ -93,7 +93,7 @@
       @media (max-width: 600px) {
         .section-02 .box .course-content {
           padding-left: 30px; } }
-      @media (max-width: 400px) {
+      @media (max-width: 450px) {
         .section-02 .box .course-content {
           padding-left: 15px; } }
   .section-02 .box:hover {

@@ -12,6 +12,14 @@
   color: $third-color;
 }
 
+// Wrapper
+@mixin wrapper {
+  max-width: $wrapper-size;
+  margin: 0 auto;
+  height: auto;
+  background-color: $wrapper-background;
+}
+
 // Sections
 @mixin section-heading {
   height: 400px;

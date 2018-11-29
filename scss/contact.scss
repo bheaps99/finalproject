@@ -58,8 +58,8 @@ h3 {
   text-transform: uppercase;
   background-color: $primary-color;
 }
-.btn:hover{
-  background-color:rgb(4, 118, 199);
+.btn:hover {
+  background-color: rgb(4, 118, 199);
 }
 
 form {
@@ -96,6 +96,9 @@ form {
       .req {
         color: $primary-color;
       }
+    }
+    #student-number {
+      display: none;
     }
   }
   label {
@@ -154,10 +157,10 @@ form {
     display: none;
   }
 
-  .p-email{
+  .p-email {
     margin-bottom: 20px;
   }
   .radio input {
-    width:auto;
+    width: auto;
   }
 }

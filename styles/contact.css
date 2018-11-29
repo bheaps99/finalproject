@@ -84,6 +84,8 @@ form {
         background-color: #003f6b; }
       form ul li .req {
         color: #003f6b; }
+    form ul #student-number {
+      display: none; }
   form label {
     display: block;
     margin: 0 0 0.5em 0;

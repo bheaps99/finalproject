@@ -21,17 +21,17 @@ body {
 .wrapper {
   max-width: 980px;
   margin: 0 auto;
+  height: auto;
+  background-color: grey;
   background: grey url("../images/bcit_980.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: auto; }
+  background-size: 100% auto; }
 
 .container {
   max-width: 980px;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: auto; }
+  height: auto;
+  background-color: grey; }
 
 /*
 about wrapper
@@ -41,8 +41,7 @@ about wrapper
   margin: 0 auto;
   background: grey url("../images/about_980.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  height: auto; }
+  background-size: 100% auto; }
 
 header {
   height: 65px;
