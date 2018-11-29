@@ -1,3 +1,93 @@
 // Import partials
 @import "variables";
 @import "mixins";
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: 60% 37%;
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 20px;
+  padding: 20px 50px;
+  margin-top: 70px;
+
+  @media (max-width: $tablet-small) {
+    @include flex-column;
+    @include no-space;
+    margin-top: 80px;
+  }
+
+  .content {
+    padding: 10px 40px;
+
+    @media (max-width: $phone) {
+      padding: 10px 30px;
+    }
+
+    @media (max-width: $phone-small) {
+      padding: 10px 20px;
+    }
+  }
+
+  .item-01 {
+    background-color: $primary-color;
+    width: $item1-width;
+    height: $item1-height;
+
+    @media (max-width: $tablet-large) {
+      width: $item1-width - 50px;
+    }
+
+    @media (max-width: $tablet-small) {
+      width: auto;
+      height: auto;
+    }
+
+    li {
+      line-height: 40px;
+    }
+  }
+
+  .item-02 {
+    background-color: $maroon;
+    height: $item2-height;
+    margin-top: getItem2Margin();
+
+    @media (max-width: $tablet-small) {
+      margin-top: 0;
+      height: auto;
+    }
+
+    .contacts {
+      @media (max-width: $tablet-small) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media (max-width: $phone-small) {
+        flex-direction: column;
+      }
+
+      div {
+        padding-bottom: 10px;
+
+        > p {
+          line-height: 10px;
+        }
+
+        > p:nth-of-type(2) {
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .item-03 {
+    background-color: $primary-color;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    div:not(:nth-of-type(1)) {
+      margin-top: 50px;
+    }
+  }
+}

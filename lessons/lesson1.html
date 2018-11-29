@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About COMP 1950</title>
+    <title>Lesson 1</title>
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/lessons.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
@@ -16,8 +17,9 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <div class=".container">
+    <div class="container">
       <header>
         <div class="title"><div class="BCIT">BCIT</div></div>
         <button class="hamburger">
@@ -37,7 +39,7 @@
       </header>
       <main>
         <section class="lesson-grid">
-          <div class="lesson-title">
+          <div class="content item-01">
             <h1>Lesson One</h1>
             <ul>
               <li>Introduction</li>
@@ -48,19 +50,21 @@
             </ul>
           </div>
 
-          <div class="instructors">
+          <div class="content item-02">
             <h1>Contact</h1>
-            <div>
-              <p>Jeff Parker</p>
-              <p>jeffrey_parker@bcit.ca</p>
-            </div>
-            <div>
-              <p>Michael Whyte</p>
-              <p>michael_whyte@bcit.ca</p>
+            <div class="contacts">
+              <div>
+                <p>Jeff Parker</p>
+                <p>jeffrey_parker@bcit.ca</p>
+              </div>
+              <div>
+                <p>Michael Whyte</p>
+                <p>michael_whyte@bcit.ca</p>
+              </div>
             </div>
           </div>
 
-          <div class="lesson-content">
+          <div class="content item-03">
             <div>
               <h1>Orientation</h1>
               <p>
@@ -128,6 +132,8 @@
                 characters will cause unwanted effects and behaviours when used
                 in a url
               </p>
+            </div>
+            <div>
               <h1>File Management</h1>
               <p>
                 Including an index.html file in every folder on your server will
@@ -135,24 +141,32 @@
                 index.html file can be a blank HTML page if you like, as long as
                 the user does not see a list of files when they request a folder
               </p>
+              <img
+                src="../images/filezilla_screenshot.png"
+                alt="Filezilla FTP"
+              />
+            </div>
+            <div>
               <h1>Standards: Code style and Organization</h1>
               <p>
                 In COMP1950 students are expected to present a readable, well
                 organized code style:
               </p>
-              <img alt="SCRENESHOT" />
+              <img src="../images/css_commenting.png" alt="CSS Commenting" />
               <p>
                 In HTML, use carriage return and tabs to indicate parent-child
                 tag relationships. Likewise, code your CSS to make it easy to
                 see which rules are applied to each selector.
               </p>
-              <img alt="sCreenshot" />
               <p>
                 Separate different file types into folders. At minimum, keep all
                 non-html files in their own folder. If you like you can make a
                 dedicated 'html' folder for your .html files as well.
               </p>
-              <img alt="screenshot" />
+              <img
+                src="../images/folder_structure.png"
+                alt="Folder structure"
+              />
             </div>
             <div>
               <h1>Semantic Markup</h1>
@@ -203,7 +217,7 @@
           <div class="first column" id="logo-footer">
             <img
               class="bcit-logo"
-              src="images/logo.jpg"
+              src="../images/logo.jpg"
               alt="British Columbia Institute of Technology"
             />
           </div>
@@ -240,6 +254,6 @@
         </div>
       </footer>
     </div>
-    <script src="scripts/show-nav.js"></script>
+    <script src="../scripts/show-nav.js"></script>
   </body>
 </html>

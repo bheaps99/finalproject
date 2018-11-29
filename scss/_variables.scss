@@ -5,6 +5,8 @@ $third-color: #fff;
 $fourth-color: rgb(3, 80, 104);
 $wrapper-background: grey;
 $body-background: lightgrey;
+$maroon: #491a1a;
+$orange: #e25412;
 
 $wrapper-size: 980px;
 $nav-height: 65px;
@@ -16,10 +18,28 @@ $white-border: 1px solid white;
 $black-border: 1px solid black;
 $grey-border: 1px solid grey;
 $box-radius: 5px;
+$text-border: 2px solid #e25412;
 
 // Device view
 $tablet-large: 900px;
 $tablet: 800px;
+$tablet-small: 760px;
 $phone-large: 680px;
 $phone: 600px;
-$phone-small: 400px;
+$phone-small: 450px;
+
+// Dimensions
+$item1-width: 450px;
+$item1-height: 320px;
+$item2-height: 230px;
+
+// Functions
+@function getItem2Margin() {
+  @return $item1-height - $item2-height;
+}
+
+@function defaultHeight() {
+}
+
+@function defaultWidth() {
+}
